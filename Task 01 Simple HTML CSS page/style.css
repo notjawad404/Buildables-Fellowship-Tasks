@@ -1,0 +1,19 @@
+.main-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 100px 20px;
+}
+
+.left-section{
+    width: 100%;
+    margin: auto;
+}
+
+.right-section{
+    width: 100%;
+}
+
+.right-section img{
+    width: 100%;
+}
