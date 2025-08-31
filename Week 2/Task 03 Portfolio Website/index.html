@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jawad Ali Portfolio</title> <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">MyPortfolio</div>
+      <ul>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <img
+        src="https://tse3.mm.bing.net/th/id/OIP.H1ztaJBPYNXoCWH4F0_qAwHaHa?pid=Api&P=0&h=220"
+        alt="Profile"
+      />
+      <h1>Jawad Ali</h1>
+      <p>
+        Software Engineer | Web Developer | Building modern web applications
+      </p>
+    </header>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-card">
+          <h3>HTML</h3>
+          <p>2 Years</p>
+        </div>
+        <div class="skill-card">
+          <h3>CSS</h3>
+          <p>2 Years</p>
+        </div>
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <p>2.5 Years</p>
+        </div>
+        <div class="skill-card">
+          <h3>React</h3>
+          <p>1 Years</p>
+        </div>
+        <div class="skill-card">
+          <h3>Node.js</h3>
+          <p>1 Years</p>
+        </div>
+        <div class="skill-card">
+          <h3>Tailwind CSS</h3>
+          <p>1 Year</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img
+            src="https://tse2.mm.bing.net/th/id/OIP.OazOC3sR4-BtSVmwB_jQSQHaFD?pid=Api&P=0&h=220"
+            alt="Blog Verse"
+          />
+          <div class="project-content">
+            <h3>Blog Verse</h3>
+            <p>Tech: React, Node.js, MongoDB</p>
+            <a href="https://github.com/notjawad404" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.RIsgwDsyT0wXPmiWdnDxhwHaEo?pid=Api&P=0&h=220"
+            alt="MrRecipe"
+          />
+          <div class="project-content">
+            <h3>MrRecipe</h3>
+            <p>Tech: React, Tailwind CSS</p>
+            <a href="https://github.com/notjawad404" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="https://i.pinimg.com/originals/63/fe/d6/63fed6d3417d5fce7ccd4533f4ef7d2c.png"
+            alt="NotePad"
+          />
+          <div class="project-content">
+            <h3>NotePad</h3>
+            <p>Tech: React, Node.js, MongoDB</p>
+            <a href="https://github.com/notjawad404" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.I8HpebN8UlS2rUhTP11XlQHaEK?pid=Api&P=0&h=220"
+            alt="Image Search Engine"
+          />
+          <div class="project-content">
+            <h3>Image Search Engine</h3>
+            <p>Tech: React, Tailwind CSS</p>
+            <a href="https://github.com/notjawad404" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Subject" />
+        <textarea rows="5" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 John Doe. All rights reserved.</p>
+      <div class="socials">
+        <a href="https://github.com/notjawad404" target="_blank" rel="noopener"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://linkedin.com/in/notjawad404"
+          target="_blank"
+          rel="noopener"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://twitter.com/notjawad404" target="_blank" rel="noopener"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+    </footer>
+    <!-- Script for Hamburger -->
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const hamburgerIcon = hamburger.querySelector("i");
+
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("show");
+        // Toggle icon
+        if (mobileMenu.classList.contains("show")) {
+          hamburgerIcon.classList.remove("fa-bars");
+          hamburgerIcon.classList.add("fa-xmark");
+        } else {
+          hamburgerIcon.classList.remove("fa-xmark");
+          hamburgerIcon.classList.add("fa-bars");
+        }
+      });
+
+      // Close menu when clicking a link
+      document.querySelectorAll(".mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("show");
+          hamburgerIcon.classList.remove("fa-xmark");
+          hamburgerIcon.classList.add("fa-bars");
+        });
+      });
+    </script>
+  </body>
+</html>

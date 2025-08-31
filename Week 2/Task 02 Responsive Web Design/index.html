@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Admin Panel</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="layout">
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <h2 class="logo">EduPanel</h2>
+        <nav>
+          <a href="#"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+          <a href="#"><i class="fa-solid fa-user-graduate"></i> Students</a>
+          <a href="#"><i class="fa-solid fa-chalkboard-teacher"></i> Teachers</a>
+          <a href="#"><i class="fa-solid fa-school"></i> Schools</a>
+          <a href="#"><i class="fa-solid fa-dollar-sign"></i> Income</a>
+          <a href="#"><i class="fa-solid fa-calendar-days"></i> Events</a>
+          <a href="#"><i class="fa-solid fa-circle-question"></i> Help</a>
+          <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+        </nav>
+      </aside>
+
+      <!-- Main -->
+      <main class="main">
+        <!-- Top Navbar -->
+        <header class="topbar">
+          <!-- Hamburger Menu -->
+          <button type="button" class="hamburger" id="hamburger" title="Open sidebar menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <input type="text" placeholder="Search.." />
+          <div class="actions">
+            <button><i class="fa-solid fa-plus"></i> Add New</button>
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-regular fa-user"></i>
+          </div>
+        </header>
+
+        <!-- Stats -->
+        <section class="stats">
+          <div class="card">
+            <div>
+              <h3>2194</h3>
+              <p>Students</p>
+            </div>
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div class="card">
+            <div>
+              <h3>53</h3>
+              <p>Teachers</p>
+            </div>
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <div class="card">
+            <div>
+              <h3>5</h3>
+              <p>Schools</p>
+            </div>
+            <i class="fa-solid fa-school"></i>
+          </div>
+          <div class="card">
+            <div>
+              <h3>$35,000</h3>
+              <p>Income</p>
+            </div>
+            <i class="fa-solid fa-sack-dollar"></i>
+          </div>
+        </section>
+
+        <!-- Bottom Grid -->
+        <section class="grid">
+          <!-- Payments -->
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Recent Payments</h3>
+              <a href="#">View All</a>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>School</th>
+                  <th>Amount</th>
+                  <th>Option</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>St. James College</td>
+                  <td>$120</td>
+                  <td><button>View</button></td>
+                </tr>
+                <tr>
+                  <td>Jane Smith</td>
+                  <td>Highland Academy</td>
+                  <td>$200</td>
+                  <td><button>View</button></td>
+                </tr>
+                <tr>
+                  <td>Mark Lee</td>
+                  <td>Bright Future School</td>
+                  <td>$150</td>
+                  <td><button>View</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Students -->
+          <div class="panel">
+            <div class="panel-header">
+              <h3>New Students</h3>
+              <a href="#">View All</a>
+            </div>
+            <div class="student">
+              <span class="avatar"><i class="fa-regular fa-user"></i></span>
+              <p>John Steve Doe</p>
+              <div class="student-actions">
+                <i class="fa-regular fa-file"></i>
+                <i class="fa-regular fa-comment"></i>
+              </div>
+            </div>
+            <div class="student">
+              <span class="avatar"><i class="fa-regular fa-user"></i></span>
+              <p>Maria Garcia</p>
+              <div class="student-actions">
+                <i class="fa-regular fa-file"></i>
+                <i class="fa-regular fa-comment"></i>
+              </div>
+            </div>
+            <div class="student">
+              <span class="avatar"><i class="fa-regular fa-user"></i></span>
+              <p>Ali Khan</p>
+              <div class="student-actions">
+                <i class="fa-regular fa-file"></i>
+                <i class="fa-regular fa-comment"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- New Extra Panels -->
+        <section class="grid">
+          <!-- Events -->
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Upcoming Events</h3>
+              <a href="#">View All</a>
+            </div>
+            <ul class="events">
+              <li><i class="fa-solid fa-calendar-day"></i> Science Fair - Sep 15</li>
+              <li><i class="fa-solid fa-calendar-day"></i> Sports Day - Sep 22</li>
+              <li><i class="fa-solid fa-calendar-day"></i> Parent Meeting - Sep 30</li>
+            </ul>
+          </div>
+
+          <!-- Teachers Performance -->
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Top Teachers</h3>
+              <a href="#">View All</a>
+            </div>
+            <ul class="teachers">
+              <li>Mr. Adam Johnson - <span>⭐ 4.9</span></li>
+              <li>Ms. Clara Davis - <span>⭐ 4.8</span></li>
+              <li>Mr. David Lee - <span>⭐ 4.7</span></li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- JS -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const sidebar = document.getElementById("sidebar");
+
+      hamburger.addEventListener("click", () => {
+        sidebar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
