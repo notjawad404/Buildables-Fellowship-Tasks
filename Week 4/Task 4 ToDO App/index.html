@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+  <div class="w-full flex-grow flex flex-col">
+    <!-- Header -->
+    <div class="bg-slate-900 text-white p-6">
+      <h1 class="text-3xl font-semibold mb-4">Today</h1>
+      <form class="todo-form flex gap-2">
+        <input type="text" name="name" placeholder="Task Name"
+               class="flex-grow rounded-lg px-4 py-2 text-black focus:outline-none">
+        <button type="submit"
+          class="bg-orange-500 text-white px-4 py-2 rounded-lg font-medium hover:bg-orange-600">
+          ADD TASK
+        </button>
+      </form>
+    </div>
+
+    <!-- Task List -->
+    <div class="bg-slate-100 p-6 rounded-b-xl flex-grow">
+      <div class="flex gap-2 mb-4">
+        <span class="remaining-tasks bg-slate-900 text-white text-sm px-3 py-1">
+          Remaining <span>0</span>
+        </span>
+        <span class="completed-tasks bg-slate-900 text-white text-sm px-3 py-1">
+          Completed <span >0</span>
+        </span>
+        <span class="total-tasks bg-slate-900 text-white text-sm px-3 py-1">
+          Total <span>0</span>
+        </span>
+      </div>
+
+      <ul class="todo-list space-y-3">
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-100 p-4">
+    <p class="text-center text-gray-500 text-sm">
+      <i class="fa fa-copyright" aria-hidden="true"></i>
+      <span> Copyright 2025 - Jawad Ali</span>
+    </p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script defer src="index.js"></script>
+</body>
+</html>
